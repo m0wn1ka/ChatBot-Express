@@ -1,0 +1,17 @@
+{
+  "name": "nodedemo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Radha mounika pulakhandam",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "node-cache": "^5.1.2"
+  }
+}
