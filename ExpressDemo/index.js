@@ -1,0 +1,14 @@
+import express from 'express';
+import 'dotenv/config';
+import bodyParser from 'body-parser';
+const app = express();
+app.use(bodyParser.json())
+app.post('/talk', async (request, response) => {
+    const message = request.body.message;
+    response.send("Your message is: " + message);
+    console.log("Received message:", message);
+})
+
+app.listen(process.env.PORT, () => {
+    console.log(`App is listening to port ${process.env.PORT}`);
+})
